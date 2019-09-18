@@ -5,17 +5,19 @@
     "privacy": "public",
     "sdkVersion": "34.0.0",
     "platforms": [
-      "ios",
-      "android",
-      "web"
+      "android"
     ],
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/logo.png",
+    "androidStatusBar": {
+      "barStyle": "dark-content",
+      "backgroundColor": "#FCD705"
+    },
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/logo.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#FCD705"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -23,8 +25,13 @@
     "assetBundlePatterns": [
       "**/*"
     ],
-    "ios": {
-      "supportsTablet": true
+    "android": {
+      "package": "com.instaacab.instaacab_ride",
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyCqO5s3aXFNODGskeDUNhd9IjkSKZbfwiA"
+        }
+      }
     }
   }
 }
